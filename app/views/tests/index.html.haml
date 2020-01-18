@@ -1,0 +1,124 @@
+-# ヘッダー部分
+.header
+  .header-logo
+    JavaTest
+-# コンテンツ部分
+.contents
+  .contents-box
+    .contents-box-left
+      - @test_qs.each_with_index do |test_q,index|
+        .test-box{id: "test-box" + index.to_s}
+          - if test_q.code_num01 == 0 then
+            %p.test-q
+              = test_q.id
+              = test_q.question01
+          - elsif test_q.code_num01 == 1
+            %pre.test-q-pre
+              = test_q.id
+              = test_q.question01
+
+          - if test_q.question02.present?
+            - if test_q.code_num02 == 0 then
+              %p.test-q
+                = test_q.question02
+            - elsif test_q.code_num02 == 1
+              %pre.test-q-pre
+                = test_q.question02
+
+          - if test_q.question03.present?
+            - if test_q.code_num03 == 0 then
+              %p.test-q
+                = test_q.question03
+            - elsif test_q.code_num03 == 1
+              %pre.test-q-pre
+                = test_q.question03
+
+          - if test_q.question04.present?
+            - if test_q.code_num04 == 0 then
+              %p.test-q
+                = test_q.question04
+            - elsif test_q.code_num04 == 1
+              %pre.test-q-pre
+                = test_q.question04
+
+          - if test_q.question05.present?
+            - if test_q.code_num05 == 0 then
+              %p.test-q
+                = test_q.question05
+            - elsif test_q.code_num05 == 1
+              %pre.test-q-pre
+                = test_q.question05
+
+          - if test_q.question06.present?
+            - if test_q.code_num06 == 0 then
+              %p.test-q
+                = test_q.question06
+            - elsif test_q.code_num06 == 1
+              %pre.test-q-pre
+                = test_q.question06
+
+          - if test_q.question07.present?
+            - if test_q.code_num07 == 0 then
+              %p.test-q
+                = test_q.question07
+            - elsif test_q.code_num07 == 1
+              %pre.test-q-pre
+                = test_q.question07
+
+          - if test_q.question08.present?
+            - if test_q.code_num08 == 0 then
+              %p.test-q
+                = test_q.question08
+            - elsif test_q.code_num08 == 1
+              %pre.test-q-pre
+                = test_q.question08
+
+          - if test_q.question09.present?
+            - if test_q.code_num09 == 0 then
+              %p.test-q
+                = test_q.question09
+            - elsif test_q.code_num09 == 1
+              %pre.test-q-pre
+                = test_q.question09
+
+          - if test_q.question10.present?
+            - if test_q.code_num10 == 0 then
+              %p.test-q
+                = test_q.question10
+            - elsif test_q.code_num10 == 1
+              %pre.test-q-pre
+                = test_q.question10
+          
+          = form_with model:@test_a_list do |f|
+            .test-a-ul{id: "answer" + index.to_s}
+              - @test_a_lists.each_with_index do |test_a_list, index|
+                - if test_a_list.test_a.test_q_id == test_q.id
+                  .test-a-list
+                    - if test_a_list.right_or_wrong == 0
+                      %p{id: "checkbox" + index.to_s}
+                        ❌
+                    - if test_a_list.right_or_wrong == 1
+                      %p{id: "checkbox" + index.to_s}
+                        ⭕
+                    = f.check_box :checkbox ,{id: index ,class: :check_box_list, checked: false},checked_value = 1,unchecked_value = 0
+                    = simple_format test_a_list.answer_lists
+
+            - @test_as.each.with_index(1) do |test_a,index|
+              - if test_a.test_q_id == test_q.id
+                - if test_a.code_num01 == 0
+                  .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                    = simple_format(h(test_a.answer01))
+                - if test_a.code_num01 == 1
+                  .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                    %pre
+                      = simple_format(h(test_a.answer01))
+              
+    .contents-box-right
+      sample-right
+-# フッター部分
+.footer
+  .footer-left
+    JavaTest
+  .footer-right
+    ©Suguru Sasuo
+  
