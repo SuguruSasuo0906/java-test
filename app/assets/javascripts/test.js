@@ -12,7 +12,7 @@ $(function () {
     $('#' + index).change(function () {
 
       var cnt = $('input:checkbox:checked').length;
-      console.log(cnt);
+      console.log(cnt); lllll
 
       if ($(this).prop('checked')) {
         $('#checkbox' + index).fadeIn();
