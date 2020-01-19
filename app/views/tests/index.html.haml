@@ -11,7 +11,7 @@
           - if test_q.code_num01 == 0 then
             %p.test-q
               = test_q.id
-              = test_q.question01
+              = simple_format(h(test_q.question01))
           - elsif test_q.code_num01 == 1
             %pre.test-q-pre
               = test_q.id
@@ -20,7 +20,7 @@
           - if test_q.question02.present?
             - if test_q.code_num02 == 0 then
               %p.test-q
-                = test_q.question02
+                = simple_format(h(test_q.question02))
             - elsif test_q.code_num02 == 1
               %pre.test-q-pre
                 = test_q.question02
@@ -105,14 +105,115 @@
 
             - @test_as.each.with_index(1) do |test_a,index|
               - if test_a.test_q_id == test_q.id
-                - if test_a.code_num01 == 0
-                  .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
-                    = simple_format(h(test_a.answer01))
-                - if test_a.code_num01 == 1
-                  .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
-                    %pre
+                .test-a-box{id: "test-a-box" + index.to_s}
+                  - if test_a.code_num01 == 0
+                    .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
                       = simple_format(h(test_a.answer01))
-              
+                  - if test_a.code_num01 == 1
+                    .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                      %pre
+                        = test_a.answer01
+                
+                  - if test_a.answer02.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num02 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer02))
+                      - if test_a.code_num02 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer02
+
+                  - if test_a.answer03.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num03 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer03))
+                      - if test_a.code_num03 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer03
+
+                  - if test_a.answer04.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num04 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer04))
+                      - if test_a.code_num04 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer04
+
+                  - if test_a.answer05.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num05 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer05))
+                      - if test_a.code_num05 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer05
+
+                  - if test_a.answer05.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num05 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer05))
+                      - if test_a.code_num05 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer05
+
+                  - if test_a.answer06.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num06 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer06))
+                      - if test_a.code_num06 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer06
+
+                  - if test_a.answer07.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num07 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer07))
+                      - if test_a.code_num07 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer07
+
+                  - if test_a.answer08.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num08 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer08))
+                      - if test_a.code_num08 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer08
+
+                  - if test_a.answer09.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num09 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer09))
+                      - if test_a.code_num09 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer09
+
+                  - if test_a.answer10.present?
+                    - if test_a.test_q_id == test_q.id
+                      - if test_a.code_num10 == 0
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          = simple_format(h(test_a.answer10))
+                      - if test_a.code_num10 == 1
+                        .test-a-wrapper{id: "test-a-wrapper" + index.to_s}
+                          %pre
+                            = test_a.answer10
+
     .contents-box-right
       sample-right
 -# フッター部分
