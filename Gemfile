@@ -67,3 +67,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
 gem 'gon'
+
+# group :production do
+#   gem 'pg'
+# end
