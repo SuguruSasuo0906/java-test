@@ -39623,3 +39623,734 @@ Processing by TestsController#index as HTML
 Completed 200 OK in 648ms (Views: 624.9ms | ActiveRecord: 21.0ms)
 
 
+Started GET "/" for ::1 at 2020-01-20 22:27:11 +0900
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/s.suguru/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/s.suguru/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by TestsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-20 22:27:11 +0900
+Processing by TestsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-01-20 22:27:16 +0900
+Processing by TestsController#index as HTML
+  Rendering tests/index.html.haml within layouts/application
+  [1m[36mTestQ Load (0.5ms)[0m  [1m[34mSELECT `test_qs`.* FROM `test_qs`[0m
+  ↳ app/views/tests/index.html.haml:9
+  [1m[36mTestAList Load (0.6ms)[0m  [1m[34mSELECT `test_a_lists`.* FROM `test_a_lists`[0m
+  ↳ app/views/tests/index.html.haml:94
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.4ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 3 LIMIT 1[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 4 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 4 LIMIT 1[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.4ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 5 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 5 LIMIT 1[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 6 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 6 LIMIT 1[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 6 LIMIT 1[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 6 LIMIT 1[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 6 LIMIT 1[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 7 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 7 LIMIT 1[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 8 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 8 LIMIT 1[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 8 LIMIT 1[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 8 LIMIT 1[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 9 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 9 LIMIT 1[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.4ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 10 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 10 LIMIT 1[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 10 LIMIT 1[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 10 LIMIT 1[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 11 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 11 LIMIT 1[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 11 LIMIT 1[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 11 LIMIT 1[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 11 LIMIT 1[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 12 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 12 LIMIT 1[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 12 LIMIT 1[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 12 LIMIT 1[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 13 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 13 LIMIT 1[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 13 LIMIT 1[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 13 LIMIT 1[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 14 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 14 LIMIT 1[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 14 LIMIT 1[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 14 LIMIT 1[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 15 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 15 LIMIT 1[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 15 LIMIT 1[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 15 LIMIT 1[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 16 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 16 LIMIT 1[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 16 LIMIT 1[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 16 LIMIT 1[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 17 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 17 LIMIT 1[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 18 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 18 LIMIT 1[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 18 LIMIT 1[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 18 LIMIT 1[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 18 LIMIT 1[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.4ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 19 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 19 LIMIT 1[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 19 LIMIT 1[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 19 LIMIT 1[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 19 LIMIT 1[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 20 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 20 LIMIT 1[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 20 LIMIT 1[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 20 LIMIT 1[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 20 LIMIT 1[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 20 LIMIT 1[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 21 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 21 LIMIT 1[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 21 LIMIT 1[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 21 LIMIT 1[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 22 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 22 LIMIT 1[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 22 LIMIT 1[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 22 LIMIT 1[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 23 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 23 LIMIT 1[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 23 LIMIT 1[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 23 LIMIT 1[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 23 LIMIT 1[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 24 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 24 LIMIT 1[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 24 LIMIT 1[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 24 LIMIT 1[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 25 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 25 LIMIT 1[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 25 LIMIT 1[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 25 LIMIT 1[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 26 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 26 LIMIT 1[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 26 LIMIT 1[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 26 LIMIT 1[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 26 LIMIT 1[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 27 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 27 LIMIT 1[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 27 LIMIT 1[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 27 LIMIT 1[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 28 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 28 LIMIT 1[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 28 LIMIT 1[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 28 LIMIT 1[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 29 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 29 LIMIT 1[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 29 LIMIT 1[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 29 LIMIT 1[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 29 LIMIT 1[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 29 LIMIT 1[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 30 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 30 LIMIT 1[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 30 LIMIT 1[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 30 LIMIT 1[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.4ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 31 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 31 LIMIT 1[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 31 LIMIT 1[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 31 LIMIT 1[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 31 LIMIT 1[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 32 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 32 LIMIT 1[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 32 LIMIT 1[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 32 LIMIT 1[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 33 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 33 LIMIT 1[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 33 LIMIT 1[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 33 LIMIT 1[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 33 LIMIT 1[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 34 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 34 LIMIT 1[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 34 LIMIT 1[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 34 LIMIT 1[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 35 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 35 LIMIT 1[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 35 LIMIT 1[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 35 LIMIT 1[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 36 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 36 LIMIT 1[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 36 LIMIT 1[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 36 LIMIT 1[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 37 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 37 LIMIT 1[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 37 LIMIT 1[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 37 LIMIT 1[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 38 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 38 LIMIT 1[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 38 LIMIT 1[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 38 LIMIT 1[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 39 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 39 LIMIT 1[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 39 LIMIT 1[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 39 LIMIT 1[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 39 LIMIT 1[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 40 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 40 LIMIT 1[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 40 LIMIT 1[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 40 LIMIT 1[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 40 LIMIT 1[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 41 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 41 LIMIT 1[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 41 LIMIT 1[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 41 LIMIT 1[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 42 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 42 LIMIT 1[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 42 LIMIT 1[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 42 LIMIT 1[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 43 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 43 LIMIT 1[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 43 LIMIT 1[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 43 LIMIT 1[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 44 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 44 LIMIT 1[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 44 LIMIT 1[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 44 LIMIT 1[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 45 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 45 LIMIT 1[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 45 LIMIT 1[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 45 LIMIT 1[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 46 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 46 LIMIT 1[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 46 LIMIT 1[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 46 LIMIT 1[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 46 LIMIT 1[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 46 LIMIT 1[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 47 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 47 LIMIT 1[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 47 LIMIT 1[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 47 LIMIT 1[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 48 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 48 LIMIT 1[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 48 LIMIT 1[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 48 LIMIT 1[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 48 LIMIT 1[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 49 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 49 LIMIT 1[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 49 LIMIT 1[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 49 LIMIT 1[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 49 LIMIT 1[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 50 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 50 LIMIT 1[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 50 LIMIT 1[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 50 LIMIT 1[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.4ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 51 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 51 LIMIT 1[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 51 LIMIT 1[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 51 LIMIT 1[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 52 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 52 LIMIT 1[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 52 LIMIT 1[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 52 LIMIT 1[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 53 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 53 LIMIT 1[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 53 LIMIT 1[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 53 LIMIT 1[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 54 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 54 LIMIT 1[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 54 LIMIT 1[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 54 LIMIT 1[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 55 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 55 LIMIT 1[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 55 LIMIT 1[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 55 LIMIT 1[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 56 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 56 LIMIT 1[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 56 LIMIT 1[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 56 LIMIT 1[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 57 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 57 LIMIT 1[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 57 LIMIT 1[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 57 LIMIT 1[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 57 LIMIT 1[0m  [["id", 57], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 58 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 58 LIMIT 1[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 58 LIMIT 1[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 58 LIMIT 1[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 58 LIMIT 1[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 59 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 59 LIMIT 1[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 59 LIMIT 1[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 59 LIMIT 1[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 59 LIMIT 1[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 60 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 60 LIMIT 1[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 60 LIMIT 1[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 60 LIMIT 1[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 60 LIMIT 1[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 61 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 61 LIMIT 1[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 61 LIMIT 1[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 61 LIMIT 1[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.4ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 62 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 62 LIMIT 1[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 62 LIMIT 1[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 62 LIMIT 1[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 62 LIMIT 1[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 63 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 63 LIMIT 1[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 63 LIMIT 1[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 63 LIMIT 1[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 64 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 64 LIMIT 1[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 64 LIMIT 1[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 64 LIMIT 1[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 65 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 65 LIMIT 1[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 65 LIMIT 1[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 65 LIMIT 1[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 65 LIMIT 1[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 65 LIMIT 1[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 66 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 66 LIMIT 1[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 66 LIMIT 1[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 66 LIMIT 1[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 66 LIMIT 1[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 67 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 67 LIMIT 1[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 67 LIMIT 1[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 67 LIMIT 1[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 67 LIMIT 1[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 67 LIMIT 1[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 68 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 68 LIMIT 1[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 68 LIMIT 1[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 68 LIMIT 1[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 68 LIMIT 1[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 69 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 69 LIMIT 1[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 69 LIMIT 1[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 69 LIMIT 1[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 69 LIMIT 1[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 70 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 70 LIMIT 1[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 70 LIMIT 1[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 70 LIMIT 1[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 70 LIMIT 1[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 71 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 71 LIMIT 1[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 71 LIMIT 1[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 71 LIMIT 1[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 72 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 72 LIMIT 1[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 72 LIMIT 1[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 72 LIMIT 1[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 72 LIMIT 1[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 72 LIMIT 1[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 73 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 73 LIMIT 1[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 73 LIMIT 1[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 73 LIMIT 1[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.3ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 74 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 74 LIMIT 1[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 74 LIMIT 1[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 74 LIMIT 1[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 74 LIMIT 1[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 75 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 75 LIMIT 1[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 75 LIMIT 1[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 75 LIMIT 1[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 75 LIMIT 1[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 76 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 76 LIMIT 1[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 76 LIMIT 1[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 76 LIMIT 1[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 76 LIMIT 1[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 76 LIMIT 1[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.2ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 77 LIMIT 1[0m
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 77 LIMIT 1[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 77 LIMIT 1[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT  `test_as`.* FROM `test_as` WHERE `test_as`.`id` = 77 LIMIT 1[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/tests/index.html.haml:95
+  [1m[36mTestA Load (0.5ms)[0m  [1m[34mSELECT `test_as`.* FROM `test_as`[0m
+  ↳ app/views/tests/index.html.haml:106
+  Rendered tests/index.html.haml within layouts/application (665.4ms)
+  [1m[36mCACHE TestA Load (0.0ms)[0m  [1m[34mSELECT `test_as`.* FROM `test_as`[0m
+  ↳ app/views/layouts/application.html.haml:10
+Completed 200 OK in 1112ms (Views: 1051.4ms | ActiveRecord: 36.1ms)
+
+
