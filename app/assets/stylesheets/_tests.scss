@@ -1,5 +1,5 @@
 .header{
-  height: 8vh;
+  height: 2vh;
   background-color:#00bfff;
 
   &-logo{
@@ -18,8 +18,8 @@
   height: auto;
   &-box{
     display: flex;
-    width: 95%;
-    margin: 6vh auto;
+    width: 100%;
+    margin: 8px auto;
     &-left{
       padding: 2vh 2vw;
       width: 80%;
@@ -32,14 +32,14 @@
         .test-q{
           padding: 8px;
           display: flex;
-          font-size: 1rem;
+          font-size: 2rem;
         }
         .test-q-pre{
           padding: 8px;
           display: block;
           background-color: #000000;
           color: #ffffff;
-          font-size: 1rem;
+          font-size: 2em;
         }
         .test-a-ul{
           padding: 8px 16px;
@@ -47,7 +47,7 @@
             position: relative;
             display: flex;
             padding: 8px;
-            font-size: 1rem;
+            font-size: 2rem;
             .check_box_list{
               position: absolute;
               top: 0.75rem;
@@ -62,12 +62,6 @@
           border: dotted 1px #00bfff;
         }
       }
-    }
-    &-right{
-      padding: 2vh 2vw;
-      width: 20%;
-      margin-left: 2vw;
-      background-color: #ffffff;
     }
   }
 }
