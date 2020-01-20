@@ -1,5 +1,10 @@
+#wrapper{
+  overflow: hidden;
+}
+
 .header{
-  height: 2vh;
+  height: 5vh;
+  width: 100%;
   background-color:#00bfff;
 
   &-logo{
@@ -12,17 +17,16 @@
 }
 
 .contents{
-  display: flex;
   background-color: #eeeeee;
   width: 100%;
   height: auto;
   &-box{
     display: flex;
-    width: 100%;
-    margin: 8px auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
     &-left{
-      padding: 2vh 2vw;
-      width: 80%;
+      width: 100%;
       background-color: #ffffff;
       margin: 0 auto;
       .test-box{
@@ -32,14 +36,19 @@
         .test-q{
           padding: 8px;
           display: flex;
-          font-size: 2rem;
+          font-size: 0.9rem;
+          .q-num{
+            display: block;
+            width: 12%;
+          }
         }
         .test-q-pre{
           padding: 8px;
           display: block;
           background-color: #000000;
+          width: auto;
           color: #ffffff;
-          font-size: 2em;
+          font-size: 0.8em;
         }
         .test-a-ul{
           padding: 8px 16px;
@@ -47,7 +56,7 @@
             position: relative;
             display: flex;
             padding: 8px;
-            font-size: 2rem;
+            font-size: 1rem;
             .check_box_list{
               position: absolute;
               top: 0.75rem;
@@ -68,6 +77,7 @@
 
 .footer{
   display: flex;
+  width: 100%;
   height: 12vh;
   background-color: #191970;
   color: #ffffff;
