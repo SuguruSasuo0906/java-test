@@ -1,6 +1,9 @@
 #wrapper{
   overflow: hidden;
 }
+p{
+  font-size: 1.2rem;
+}
 
 .header{
   height: 5vh;
@@ -36,10 +39,10 @@
         .test-q{
           padding: 8px;
           display: flex;
-          font-size: 16px;
+          font-size: 1.2rem;
           .q-num{
             display: block;
-            width: 20%;
+            width: 14vw;
           }
         }
         .test-q-pre{
@@ -48,7 +51,7 @@
           background-color: #000000;
           width: auto;
           color: #ffffff;
-          font-size: 12px;
+          font-size: 1.2rem;
         }
         .test-a-ul{
           padding: 8px 16px;
@@ -56,7 +59,7 @@
             position: relative;
             display: flex;
             padding: 8px;
-            font-size: 1rem;
+            font-size: 1.2rem;
             .check_box_list{
               position: absolute;
               top: 0.75rem;
