@@ -36,6 +36,7 @@ p{
         border-top: solid #00bfff 2px;
         border-bottom: solid #00bfff 2px;
         padding: 8px;
+        -webkit-overflow-scrolling: touch;
         .test-q{
           padding: 8px;
           display: flex;
@@ -48,6 +49,8 @@ p{
         .test-q-pre{
           padding: 8px;
           display: block;
+          overflow-x:scroll;
+          // white-space: pre-wrap;
           background-color: #000000;
           width: auto;
           color: #ffffff;
