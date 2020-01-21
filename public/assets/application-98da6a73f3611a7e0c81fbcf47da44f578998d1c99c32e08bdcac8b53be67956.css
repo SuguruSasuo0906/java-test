@@ -1,0 +1,262 @@
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+/* line 5, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+html {
+  color: #000;
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+/* line 18, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  word-break: break-all;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  letter-spacing: 1px;
+}
+
+/* line 50, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+/* line 61, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 74, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 79, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+caption,
+th {
+  text-align: left;
+}
+
+/* line 83, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 92, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+q:before,
+q:after {
+  content: '';
+}
+
+/* line 96, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+/* line 102, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 105, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 108, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+  /*to enable resizing for IE*/
+}
+
+/*because legend doesn't inherit in IE */
+/* line 117, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_reset.scss */
+legend {
+  color: #000;
+}
+
+/* line 1, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+#wrapper {
+  overflow: hidden;
+}
+
+/* line 4, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+p {
+  font-size: 1.2rem;
+}
+
+/* line 8, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.header {
+  height: 5vh;
+  width: 100%;
+  background-color: #00bfff;
+}
+/* line 13, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.header-logo {
+  color: #ffffff;
+  padding-left: 15px;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  line-height: 200%;
+}
+
+/* line 22, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents {
+  background-color: #eeeeee;
+  width: 100%;
+  height: auto;
+}
+/* line 26, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+/* line 31, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+/* line 35, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left .test-box {
+  border-top: solid #00bfff 2px;
+  border-bottom: solid #00bfff 2px;
+  padding: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 40, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left .test-box .test-q {
+  padding: 8px;
+  display: flex;
+  font-size: 1.2rem;
+}
+/* line 44, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left .test-box .test-q .q-num {
+  display: block;
+  width: 14vw;
+}
+/* line 49, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left .test-box .test-q-pre {
+  padding: 8px;
+  display: block;
+  overflow-x: scroll;
+  background-color: #000000;
+  width: auto;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+/* line 59, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left .test-box .test-a-ul {
+  padding: 8px 16px;
+}
+/* line 61, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left .test-box .test-a-ul .test-a-list {
+  position: relative;
+  display: flex;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+/* line 66, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left .test-box .test-a-ul .test-a-list .check_box_list {
+  position: absolute;
+  top: 0.75rem;
+  left: -10px;
+}
+/* line 73, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.contents-box-left .test-box .test-a-box {
+  display: block;
+  margin: 8px;
+  padding: 16px;
+  border: dotted 1px #00bfff;
+}
+
+/* line 84, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.footer {
+  display: flex;
+  width: 100%;
+  height: 12vh;
+  background-color: #191970;
+  color: #ffffff;
+}
+/* line 90, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.footer-left {
+  font-size: 2em;
+  padding: 2vh 2vw;
+}
+/* line 94, /Users/s.suguru/projects/Ruby/java-test/app/assets/stylesheets/_tests.scss */
+.footer-right {
+  font-size: 0.5em;
+  padding: 2vh 2vw;
+  margin-left: auto;
+}
