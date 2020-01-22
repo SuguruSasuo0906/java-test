@@ -43,7 +43,9 @@ p{
           font-size: 1.2rem;
           .q-num{
             display: block;
-            width: 50px;
+            width: auto;
+            white-space: nowrap;
+            padding-right: 8px;
           }
         }
         .test-q-pre{
@@ -51,9 +53,9 @@ p{
           display: block;
           overflow-x:scroll;
           // white-space: pre-wrap;
-          background-color: #000000;
+          background-color: #E5FFDD;
           width: auto;
-          color: #ffffff;
+          color: #427723;
           font-size: 1.2rem;
         }
         .test-a-ul{
